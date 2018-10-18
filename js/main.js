@@ -12,8 +12,8 @@ function loadWeather(){
     if(zip ===''){
         zip = '2643743';
     }
-    var currentWeatherPath = "http://api.openweathermap.org/data/2.5/weather?id=" + zip +'&units=metric&APPID=088a0ac4bc2a245e4028db50368dab23';
-    var forecastPath = "http://api.openweathermap.org/data/2.5/forecast?id=" + zip +'&units=metric&APPID=088a0ac4bc2a245e4028db50368dab23';
+    var currentWeatherPath = "https://api.openweathermap.org/data/2.5/weather?id=" + zip +'&units=metric&APPID=088a0ac4bc2a245e4028db50368dab23';
+    var forecastPath = "https://api.openweathermap.org/data/2.5/forecast?id=" + zip +'&units=metric&APPID=088a0ac4bc2a245e4028db50368dab23';
     //london id is 2643743 stanwell 2637035 singapore 1880252
     // GET THE CONDITIONS
 weatherConditions.open('GET',currentWeatherPath, true);
